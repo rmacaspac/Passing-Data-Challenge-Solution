@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RMDetailViewController.h"
 
-@interface RMViewController : UIViewController
+@interface RMViewController : UIViewController <RMDetailViewControllerDelegate, UITextFieldDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end
